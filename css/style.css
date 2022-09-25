@@ -1,0 +1,190 @@
+/*initialisation de la page web*/
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box; /*annulation de bordures*/
+	list-style: none;
+	text-decoration: none;
+}
+
+/*disign du menu laretal*/
+#content .menu-lateral {
+	background-color: rgb(5, 68, 104);
+	height: 100%;
+	width: 250px;
+	padding: 20px 0px;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+}
+#content .menu-lateral .profil {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+/*disign de la section profil*/
+#content .menu-lateral .profil img {
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: 0 auto;
+	border-radius: 50%; /*transformation d'une image en cercle*/
+	border: 10px solid rgb(32, 44, 69);
+}
+#content .menu-lateral .profil h3 {
+	margin-top: 20px;
+	color: whitesmoke;
+}
+#content .menu-lateral .profil p {
+	color: #fff;
+	font-style: italic;
+}
+
+/*disign de la section liste des elements*/
+#content .menu-lateral ul li a {
+	display: block;
+	padding: 13px 30px;
+	position: relative;
+	font-size: 16px;
+	border-bottom: 1px solid #10558D;
+	color: rgb(241, 237, 237);
+}
+
+/*annimation au survol des elements*/
+
+#content .menu-lateral ul li a:hover, .active {
+	background-color: white;
+	color: #0C7DB1 !important;
+	border-right: 2px solid rgb(5, 68, 104);
+}
+
+/*disign de la section contenu de la page*/
+.section {
+	width: calc(100% - 250px);
+	margin-left: 250px;
+}
+.topBar {
+	background-color: rgb(32, 44, 69) ;
+	height: 55px;
+	padding: 0 30px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.lien a {
+	font-size: 2.5em;
+	color: #FAFBFF;
+	font-weight: bold;
+}
+.lien a:hover {
+	font-size: 2.8em;
+	color: rgb(135, 233, 254);
+}
+/*disign de la bannière*/
+.banner {
+	height: 210px;
+	background-color: rgb(7, 105, 185);
+	color: #FFF;
+}
+.titre {
+	font-size: 1.5em;
+	text-transform: uppercase;
+	padding-top: 40px;
+	text-align: center;
+}
+.trait {
+	background-color: rgb(255, 255, 224);
+	width: 50%;
+	height: 10px;
+	margin: 15px auto 0 auto;15
+}
+.btn {
+	text-align: center;
+	margin-top: 20px;
+} 
+.btn button {
+	font-size: 1em;
+	margin-top: 10px;
+	padding: 10px;
+	color: darkblue;
+}
+.btn button:hover {
+	background-color: darkblue ;
+	color: whitesmoke;
+}
+
+/*disign de la section articles du blog*/
+.blog {
+	height: 250px;
+	display: flex;
+	margin-top: 15px;
+	padding: 0 30px;
+}
+.img_blog img {
+	width: 100%;
+}
+.article {
+	margin-left: 20px;	
+}
+.blog2 {
+	height: 250px;
+	display: flex;
+	padding: 0 30px;
+	margin-top: -50px;
+}
+.img_blog2 img {
+	width: 100%;
+}
+.article2 {
+	margin-left: 20px;
+}
+.banner2 {
+	height: 210px;
+	color: #FFF;
+	background-color: darkblue;
+}
+.titre2 {
+	font-size: 1.5em;
+	text-align: center;
+	padding: 20px;
+}
+form .vm {
+	width: 40%;
+	padding: 10px 3px;
+	margin-left: 200px;
+}
+form button {
+	width: 100px;
+	height: 40px;
+}
+form button:hover {
+	background-color: darkblue;
+	color: whitesmoke;
+}
+.blog3 {
+	height: 250px;
+	display: flex;
+	margin-top: 15px;
+	padding: 0 30px;
+}
+.blog4 {
+	height: 250px;
+	display: flex;
+	margin-top: 15px;
+	padding: 0 30px;
+}
+.img_blog3 {
+	width: 100%;
+}
+.img_blog4 {
+	width: 100%;
+}
+.article3 {
+	margin-left: 20px;
+}
+.article4 {
+	margin-left: 20px;
+}
+
+
+

@@ -1,0 +1,93 @@
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ 	text-decoration: none;
+ 	font-family: Tahoma;
+ }
+ /*Design menu lateral*/
+ #content {
+ 	margin-bottom: 20px;
+ }
+ .menu-lateral {
+ 	background-color: darkblue;
+ 	color: whitesmoke;
+ 	width: 260px;
+ 	height: 100%;
+ 	padding: 20px 0;
+ 	top: 0;
+ 	left: 0;
+ 	overflow-y: scroll;
+	overflow-x: hidden;
+	position: fixed;
+ }
+ .menu-lateral h2 {
+ 	padding-left: 25px;
+ }
+ .menu-lateral ul {
+ 	margin-top: 20px;
+ 	list-style: none;
+ }
+ .menu-lateral ul li a {
+ 	display: block;
+ 	font-size: 20px;
+ 	color: whitesmoke;
+ 	padding: 10px 30px;
+ }
+ ul li a:hover, .active {
+ 	background-color: #FFF;
+ 	color: black !important;
+ 	border-right: 2px solid rgb(5, 68, 104);
+ }
+
+ /*Design section de la page*/
+ .section {
+ 	width: calc(100% - 260px);
+ 	margin-left: 260px;
+ 	background-color: #f0f0f4;
+ }
+ .texte {
+ 	margin: 20px 60px;
+ 	text-align: justify;
+ 	font-size: 18px;
+ }
+ .texte ul, ol {
+ 	padding-left: 60px;
+ }
+ p {
+ 	padding-left: 20px;
+ }
+ hr {
+ 	margin: 0 60px;
+ }
+ .codes {
+ 	background-color: darkblue;
+ 	padding: 10px 80px;
+ 	border: 1px solid orange;
+ 	color: whitesmoke;
+ }
+ .head {
+ 	padding-left: 50px;
+ }
+ .titre {
+ 	padding-left: 80px;
+ }
+ .li {
+ 	padding-left: 30px;
+ }
+ h4 {
+ 	padding-left: 30px;
+ 	color: #f89f1f;
+ }
+ .label {
+ 	padding-left: 40px;
+ }
+ .form {
+ 	text-align: center;
+ }
+ .number {
+ 	padding: 5px;
+ }
+.checkbox {
+	padding-left: 100px;
+}

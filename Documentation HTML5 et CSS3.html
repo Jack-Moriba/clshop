@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="zxx"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Documentation HTML5 et CSS3</title>
+	<link rel="stylesheet" type="text/css" href="Documentation%20HTML5%20et%20CSS3_fichiers/doc.css">
+</head>
+<body>
+
+	<div id="content">
+		
+		<!-- Debut menu lateral -->
+		<div class="menu-lateral">
+			<h2>Documentation HTML5 et CSS3</h2>
+			<ul>
+				<li>
+					<a href="#introduction" class="active">Introduction</a>
+				</li>
+				<li>
+					<a href="#balise">Les balises et attributs</a>
+				</li>
+				<li>
+					<a href="#structure">Structure de base d'une page html5</a>
+				</li>
+				<li>
+					<a href="#paragraphe">Paragraphes</a>
+				</li>
+				<li>
+					<a href="#saut">Sauter une ligne</a>
+				</li>
+				<li>
+					<a href="#titres">Les titres</a>
+				</li>
+				<li>
+					<a href="#lien">Les liens</a>
+				</li>
+				<li>
+					<a href="#liste">Les listes</a>
+				</li>
+				<li>
+					<a href="#image">Les images</a>
+				</li>
+				<li>
+					<a href="#formulaire">Les formulaires</a>
+				</li>
+				<li>
+					<a href="#">Les tableaux</a>
+				</li>
+				<li>
+					<a href="#">Les balises de type block et inline</a>
+				</li>
+				<li>
+					<a href="#">La video et l'audio</a>
+				</li>
+				<li>
+					<a href="#">Envoyez votre site sur le web</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Debut section de la documentation -->
+		<div class="section">
+			<!-- Debut introduction -->
+			<div id="introduction" class="texte">
+				<h2>Introduction</h2><br>
+				<p>
+					Vous êtes au bon endroit ! Ce cours est destiné aux débutants qui ne connaissent rien à la création
+					de sites web et qui n'attendent qu'une chose : qu'on leur explique pas à pas comment tout cela
+					fonctionne avec des mots simples et des exemples concrets !
+				</p><br>
+				<p>
+					Nous découvrirons dans ce cours les célèbres langages <strong>HTML5 et CSS3</strong>
+ que l'on utilise aujourd'hui pour concevoir des sites web. Même si ces 
+"langages" ne signifient pas encore grande chose pour vous, 
+rassurez-vous : tout ce que vous avez besoin de savoir sera expliqué 
+dans ce cours ! Vous découvrirez notamment comment :
+				</p><br>
+				<ul>
+					<li>
+						Insérer du texte, des images et des vidéos
+					</li>
+					<li>
+						Faire des liens entre vos pages
+					</li>
+					<li>
+						Mettre en forme en modifiant la couleur, la taille, le fond, la police...
+					</li>
+					<li>
+						Positionner les éléments du site comme bon vous semble : en-tête, menus...
+					</li>
+					<li>
+						... et bien plus encore !
+					</li>
+				</ul><br>
+				<p>
+					HTML et CSS sont deux« langues » qu'il faut savoir parler pour 
+créer des sites web. C'est le navigateur web qui fera la traduction 
+entre ces langages informatiques et ce que vous verrez s'afficher à 
+l'écran
+				</p><br>
+				<p>
+					Pour expliquer à l'ordinateur ce que vous voulez faire, il va 
+falloir utiliser un langage qu'il comprend. Et c'est là que les choses 
+secorsent, parce qu'il va falloir apprendre deux langages !
+				</p><br>
+				<p>
+					Vous devez vous dire que manipuler deuxlangages va être deuxfois 
+plus complexe et deuxfois plus long à apprendre…mais cen'est pas le cas !
+ Je vous rassure, s'il y a deuxlangages c'est, au contraire, pour 
+faciliter les choses. Nous allons avoir affaire àdeuxlangages quise 
+complètent car ils ont des rôles différents :
+				</p><br>
+				<ul>
+					<li>
+						<strong>HTML</strong> (<em>HyperText Markup Language</em>) : il a 
+fait son apparition dès 1991 lors du lancement du Web. Son rôle est de 
+gérer et organiser le contenu. C'est donc en HTML que vous écrirez ce 
+qui doit être affiché sur la page : du texte, des liens, desimages…Vous 
+direz par exemple : « Ceci est mon titre, ceci est mon menu, voici le 
+texte principal de la page, voici uneimage à afficher, etc. ».
+					</li>
+					<li>
+						<strong>CSS</strong> (<em>Cascading Style Sheets, aussi appelées Feuilles de style</em>)
+ : le rôle du CSS est de gérer l'apparence de la page web (agencement, 
+positionnement, décoration, couleurs, taille du texte…). Ce langage est 
+venu compléter le HTML en 1996.
+					</li>
+				</ul><br>
+				<h3>Les différentes versions de HTML et CSS</h3><br>
+				<ul>
+					<li>
+						<strong>HTML1</strong> : c'est la toute première version créée par TimBerners-Lee en 1991.
+					</li>
+					<li>
+						<strong>HTML 2</strong>  : la deuxième version du HTML apparaît en
+ 1994 et prend fin en 1996 avec l'apparition du HTML 3.0. C'est cette 
+version qui posera en fait les bases des versions suivantes du HTML. Les
+ règles et le fonctionnement de cette version sont donnés par le W3C 
+(tandis que la première version a été créée par un seul homme).
+					</li>
+					<li>
+						<strong>HTML 3</strong> : apparue en 1996, cette nouvelle version 
+du HTML rajoute de nombreuses possibilités au langage comme lestableaux,
+ les applets, les scripts, le positionnement du texte autour des images,
+ etc
+					</li>
+					<li>
+						<strong>HTML 4</strong> : ils'agit de la version la plus répandue 
+du HTML (plus précisément, ils'agit de HTML 4.01). Elle apparaît pour la
+ première fois en 1998 et propose l'utilisation de frames (qui découpent
+ une page web en plusieurs parties), des tableaux plus complexes, des 
+améliorations sur les formulaires, etc. Mais surtout, cette version 
+permet pour la première fois d'exploiter des feuilles de style, notre 
+fameuxCSS !
+					</li>
+					<li>
+						<strong>HTML 5</strong> : c'est LA dernière version. Encore assez 
+peu répandue, elle fait beaucoup parler d'elle car elle apporte de 
+nombreuses améliorations comme la possibilité d'inclure facilement des 
+vidéos, un meilleur agencement du contenu, denouvelles fonctionnalités 
+pour les formulaires, etc. C'est cette version que nous allons découvrir
+ ensemble.
+					</li><br>
+					
+					<li>
+						<strong>CSS 1</strong> : dès 1996, on dispose de la première 
+version du CSS. Elle pose les bases de ce langage qui permet de 
+présenter sa page web, comme les couleurs, les marges, les polices de 
+caractères, etc.
+					</li>
+					<li>
+						<strong>CSS 2</strong> : apparue en 1999 puis complétée par CSS 
+2.1, cette nouvelle version de CSS rajoute de nombreuses options. On 
+peut désormais utiliser des techniques de positionnement très précises, 
+qui nous permettent d'afficher des éléments où on le souhaite sur la 
+page.
+					</li>
+					<li>
+						<strong>CSS 3</strong> : c'est la dernière version, qui apporte 
+des fonctionnalités particulièrement attendues comme les bordures 
+arrondies, les dégradés, les ombres, etc.
+					</li>
+				</ul><br>
+			</div>
+			<hr>
+			<!-- Debut balises et attributs -->
+			<div id="balise" class="texte">
+				<h2>Les balises et les attributs</h2><br>
+				<h3>Les balises</h3>
+					<p>
+						Les pages HTML sont remplies de ce qu'on appelle des balises. 
+Celles-cisont invisibles à l'écran pour vos visiteurs, mais elles 
+permettent à l'ordinateur de comprendre ce qu'il doit afficher. Les 
+balises se repèrent facilement. Elles sont entourées de « chevrons », 
+c'est-à-dire des symboles &lt; et &gt;. Elles indiquent la nature du 
+texte qu'elles encadrent. Elles veulent dire par exemple : « Ceci est 
+letitre de la page », « Ceci est une image », « Ceci est un paragraphe 
+de texte », etc.
+					</p><br>
+					<p>On distingue deux types de balises : les balises en paires et les balises orphelines.</p><br>
+					<em>Les balises en paires</em>
+					<p>Elles s'ouvrent, contiennent du texte, et se ferment plus loin. Voici à quoi elles ressemblent :</p><br>
+						<strong>Code HTML :</strong>
+						<div class="codes">
+		    					<strong>&lt;titre&gt;</strong> Ceci est un titre <strong>&lt;/titre&gt;</strong><br>
+		    			</div><br>		
+	    			<em>Les balises orphelines</em>
+	    			<p>Ce sont des balises qui servent le plus souvent à insérer un 
+élément à un endroit précis (par exemple une image). Il n'est pas 
+nécessaire de délimiter le début et la fin de l'image, on veut juste 
+dire à l'ordinateur « Insère une image ici ».</p><br>
+		    			<strong>Code HTML :</strong>
+		    			<div class="codes">
+		    					<strong>&lt;img /&gt;</strong><br>
+		    			</div><br>		
+	    		<h3>Les attributs</h3>
+	    			<p>
+	    				Les attributs sont un peu les options des balises. Ils viennent
+ les compléter pour donner des informations supplémentaires. L'attribut 
+se place après le nomde la balise ouvrante et a le plus souvent une 
+valeur, comme ceci :
+	    			</p><br>
+	    				<strong>Code HTML :</strong>
+		    			<div class="codes">
+		    					<strong>&lt;balise</strong> <em>attribut ="valeur"</em> <strong>/&gt;</strong><br>
+		    			</div><br>
+	    			<p>
+	    				 Prenons la balise &lt;img /&gt; que nous venons de voir. 
+Seule, elle ne sert pas à grande chose. On pourrait rajouter un attribut
+ qui indique le nom de l'image à afficher :
+	    			</p><br>
+	    			<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;img</strong> <em>nom ="photo.jpg"</em> <strong>/&gt;</strong><br>
+	    			</div><br>
+	    			<p>L'ordinateur comprend alors qu'il doit afficher l'image contenue dans le fichier photo.jpg .</p>
+			</div>
+			<hr>
+
+			<!-- Debut Structure page html -->
+			<div id="structure" class="texte">
+				<h2>Structure de base d'une page HTML5</h2><br>
+				<p>
+					Reprenons notre éditeur de texte (dans mon cas SublimText). Je vous
+ invite à écrire ou à copier-coller le code source ci-dessous dans 
+SublimText. Ce code correspond à la base d'une page web en HTML5 :
+				</p><br>
+				<strong>Code HTML :</strong>
+				<div class="codes">
+					&lt;!DOCTYPE html&gt; <br>
+					&lt;html&gt;<br>
+						<span class="head"></span>&lt;head&gt;<br>
+							<span class="titre"></span>&lt;meta charset="utf-8" /&gt;<br>
+							<span class="titre"></span>&lt;title&gt;Titre&lt;/title&gt;<br>
+						<span class="head"></span>&lt;/head&gt;<br><br>
+						<span class="head"></span>&lt;body&gt;<br><br>
+						<span class="head"></span>&lt;/body&gt;<br>
+					&lt;/html&gt;<br>
+				</div>
+			</div>
+			<hr>
+
+			<!-- Debut des paragraphes -->
+			<div id="paragraphe" class="texte">
+				<h2>Les paragraphes</h2><br>
+				<p>
+					La plupart du temps, lorsqu'on écrit du texte dans une page web, on
+ le fait à l'intérieur de paragraphes. Le langage HTML propose justement
+ la balise &lt;p&gt; pour délimiter les paragraphes.
+				</p><br>
+				<strong>Code HTML :</strong>
+				<div class="codes">
+					&lt;p&gt;Bonjour et bienvenue sur mon site !&lt;/p&gt;
+				</div><br>
+				<p>
+					Comme je vous l'ai dit au chapitre précédent, on écrit le contenu 
+du site web entre les balises &lt;body&gt;&lt;/body&gt; . Il nous suffit
+ donc de mettre notre paragraphe entre ces deux balises et nous aurons 
+enfin notre première vraie page web avec du texte !<br>
+					Je reprends donc exactement le même code qu'au chapitre précédent et j'y ajoute mon paragraphe :
+				</p><br>
+				<strong>Code HTML :</strong>
+				<div class="codes">
+					&lt;!DOCTYPE html&gt; <br>
+					&lt;html&gt;<br>
+						<span class="head"></span>&lt;head&gt;<br>
+							<span class="titre"></span>&lt;meta charset="utf-8" /&gt;<br>
+							<span class="titre"></span>&lt;title&gt;Titre&lt;/title&gt;<br>
+						<span class="head"></span>&lt;/head&gt;<br><br>
+						<span class="head"></span>&lt;body&gt;<br>
+							<span class="titre">&lt;p&gt;Bonjour et bienvenue sur mon site !&lt;/p&gt;<br>
+						<span class="head"></span>&lt;/body&gt;<br>
+					&lt;/html&gt;<br>
+				</span></div><br>
+				<p>Essayez, vous allez voir le résultat !</p>
+			</div>
+			<hr>
+
+			<!-- Debut saut de ligne -->
+			<div id="saut" class="texte">
+				<h2>Sauter une ligne</h2><br>
+				<p>
+					En HTML, si vous appuyez sur la touche Entrée, cela ne crée pas une nouvelle ligne comme vous en avez l'habitude. 
+				</p>
+				<p>
+					Il existe une balise « Aller à la ligne » ! <br>
+					C'est une balise orpheline quisert juste à indiquer qu'on doit aller à la ligne : &lt;br /&gt;. 
+				</p><br>
+				<strong>Code HTML :</strong>
+				<div class="codes">
+					&lt;!DOCTYPE html&gt; <br>
+					&lt;html&gt;<br>
+						<span class="head"></span>&lt;head&gt;<br>
+							<span class="titre"></span>&lt;meta charset="utf-8" /&gt;<br>
+							<span class="titre"></span>&lt;title&gt;Titre&lt;/title&gt;<br>
+						<span class="head"></span>&lt;/head&gt;<br><br>
+						<span class="head"></span>&lt;body&gt;<br>
+							<span class="titre"></span>&lt;p&gt;Bonjour et bienvenue sur mon site !&lt;br /&gt;<br>
+							<span class="titre"></span>Ceci est mon premier test alors soyez indulgents s'il vous plaît, j'apprends petit à petit comment cela marche&lt;/p&gt;<br>
+						<span class="head"></span>&lt;/body&gt;<br>
+					&lt;/html&gt;<br>
+				</div><br>
+				<ul>
+					<li>
+						&lt;p&gt; &lt;/p&gt; : pour organiser son texte
+					</li>
+					<li>
+						&lt;br /&gt; : pour aller a la ligne
+					</li>
+				</ul>
+			</div>
+			<hr>
+
+			<!-- Debut des titres -->
+			<div id="titres" class="texte">
+				<h2>Les titres</h2><br>
+				<p>
+					Lorsque le contenu de votre page va s'étoffer avec de nombreux 
+paragraphes, il va devenir difficile pour vos visiteurs de se repérer. 
+C'est là que les titres deviennent utiles.
+				</p><br>
+				<p> On a donc six balises de titres différentes :</p><br>
+				<ul>
+					<li>
+						&lt;h1&gt; &lt;/h1&gt; : signifie « titre très important ». En 
+général, on s'en sert pour afficher le titre de la page au début de 
+celle ci.
+
+					</li>
+					<li>
+						&lt;h2&gt; &lt;/h2&gt; : signifie « titre important ».
+					</li>
+					<li>
+						&lt;h3&gt; &lt;/h3&gt; : pareil, c'est un titre un peu moins important (on peut dire un « sous-titre » si vous voulez)
+					</li>
+					<li>
+						&lt;h4&gt; &lt;/h4&gt; : titre encore moins important.
+					</li>
+					<li>
+						&lt;h5&gt; &lt;/h5&gt; : titre pas important.
+					</li>
+					<li>
+						&lt;h6&gt; &lt;/h6&gt; : titre vraiment, mais alors là vraiment pas important du tout
+					</li>
+				</ul>
+			</div>
+			<hr>
+
+			<!-- Debut des liens -->
+			<div id="lien" class="texte">
+				<h2>Les liens</h2><br>
+				<h3>Un lien vers un autre site</h3>
+				<p>
+					Pour faire un lien, la balise que nous allons utiliser est très 
+simple à retenir : &lt;a&gt;. Il faut cependant lui ajouter un attribut,
+ href, pour indiquer vers quelle page le lien doit conduire.
+				</p><br>
+				<p>
+					Par exemple, le code ci-dessous est un lien qui amène vers le Site du Zéro, situé à l'adresse http://www.siteduzero.com :
+				</p><br>
+				<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;a</strong> <em>href ="http://www.siteduzero.com"</em> <strong>&gt;</strong>Site du Zéro<strong>&lt;/a&gt;</strong><br>
+	    			</div><br>
+
+	    		<h3>Deux pages situées dans un même dossier</h3>
+
+	    		<p>
+	    			Pour commencer, nous allons créer deux fichiers correspondant à 
+deux pages HTML différentes. Nous aurons donc ces deux fichiers sur 
+notre disque dans le même dossier par exemple contenu. 
+	    		</p><br>
+	    		<p>Voici le code que nous allons utiliser dans nos fichiers page1.html et page2.html.</p><br>
+	    		<em>page1.html</em><br><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;a</strong> <em>href ="page2.html"</em> <strong>&gt;</strong>la page 2<strong>&lt;/a&gt;</strong><br>
+	    			</div><br><br>
+	    			<em>page2.html</em><br><br>
+	    			<p>La page 2 (page d'arrivée) affichera simplement un message pour indiquer que l'on est bien arrivé sur la page 2 :</p><br>
+	    				<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;h1&gt;</strong>Bienvenue sur la page 2 !<strong>&lt;/h1&gt;</strong><br>
+					</div><br>
+					<h3>Deux pages situées dans des dossiers differents</h3>
+					<p>
+						Imaginons que <em>page2.html</em> se trouve dans un sous-dossier appellé <em>contenu</em>
+					</p>
+					<p>
+						Dans ce cas de figure, le lien doit être rédigé comme ceci :
+					</p><br>
+					<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;a</strong> <em>href ="contenu/page2.html"</em> <strong>&gt;</strong>la page 2<strong>&lt;/a&gt;</strong><br>
+					</div><br>
+					<p>
+						S'il y avait plusieurs sous-dossiers, on écrirait ceci :
+					</p><br>
+					<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;a</strong> <em>href ="contenu/autredossier/page2.html"</em> <strong>&gt;</strong>la page 2<strong>&lt;/a&gt;</strong><br>
+					</div><br>
+					<p>
+						Si votre fichier cible est placé dans un dossier quise trouve « 
+plus haut » dans l'arborescence, il faut écrire deux points comme ceci :
+					</p><br>
+					<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;a</strong> <em>href ="../page2.html"</em> <strong>&gt;</strong>la page 2<strong>&lt;/a&gt;</strong><br>
+					</div><br>
+					<h3>Un lien vers une ancre</h3>
+					<p>
+						Une <strong>ancre</strong> est une sorte de point de repère que 
+vous pouvez mettre dans vos pages HTML lorsqu'elles sont très longues. 
+En effet, il peut alors être utile de faire un lien amenant plus bas 
+dans la même page pour que le visiteur puisse sauter directement à la 
+partie qui l'intéresse.
+					</p><br>
+					<p>
+						Pour créer une ancre, ilsuffit de rajouter l'attribut id à une 
+balise qui va alors servir de repère. Ce peut être n'importe quelle 
+balise, un titre par exemple.<br>
+						Utilisez l'attribut id pour donner un nomà l'ancre. Cela nous 
+servira ensuite pour faire un lien vers cette ancre. Par exemple :
+					</p><br>
+					<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;h2</strong> <em>id="mon_ancre"</em><stong>&gt;Titre<strong>&lt;/h2&gt;</strong><br>
+					</stong></div><br>
+					<p>
+						Ensuite, il suffit de créer un lien comme d'habitude, mais cette 
+fois l'attribut href contiendra un dièse (#) suivi du nomde l'ancre. 
+Exemple :
+					</p><br>
+					<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;a</strong> <em>href ="#mon_ancre"</em> <strong>&gt;</strong>Aller vers l'ancre<strong>&lt;/a&gt;</strong><br>
+					</div><br>
+		</div>
+
+		<!-- Debut des listes -->
+		<div id="liste" class="texte">
+			<h2>Les listes</h2><br>
+				<p>
+					Les listes nous permettent souvent de mieux structurer notre texte et d'ordonner nos informations.<br>
+					Nous allons découvrir ici deux types de listes :
+				</p><br>
+			<h3>Liste non ordonnée ou Liste à puce</h3>
+				<p>
+					Une liste non ordonnée ressemble à ceci :
+				</p>
+				<ul>
+					<li>Fraises</li>
+					<li>Framboises</li>
+					<li>Cerises</li>
+				</ul><br>
+				<p>
+					C'est un système qui nous permet de créer une liste d'éléments sans
+ notion d'ordre (il n'y a pas de « premier » ni de « dernier »). Créer 
+une liste non ordonnée est très simple. Il suffit d'utiliser la balise 
+&lt;ul&gt; que l'on referme un peu plus loin avec &lt;/ul&gt;. on va 
+écrire chacun des éléments de la liste entre deuxbalises 
+&lt;li&gt;&lt;/li&gt;. Chacune de ces balises doit se trouver entre 
+&lt;ul&gt; et &lt;/ul&gt;. Vous allez comprendre de suite avec cet 
+exemple :
+				</p><br>
+					<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				&lt;ul&gt;<br>
+							<div class="li">&lt;li&gt;Fraises&lt;/li&gt;<br>
+							&lt;li&gt;Framboises&lt;/li&gt;<br>
+							&lt;li&gt;Cerises&lt;/li&gt;</div>
+						&lt;/ul&gt;<br>
+					</div><br>
+				<h3>Liste ordonnée</h3>
+					<p>
+						Une liste ordonnée ressemble à ceci :
+					</p>
+					<ol>
+						<li>Fraises</li>
+						<li>Framboises</li>
+						<li>Cerises</li>
+					</ol><br>
+					<p>
+						Une liste ordonnée fonctionne de la même façon, seule une balise 
+change : il faut remplacer &lt;ul&gt;&lt;/ul&gt; par 
+&lt;ol&gt;&lt;/ol&gt;.<br> À l'intérieur de la liste, on ne change rien :
+ on utilise toujours des balises &lt;li&gt;&lt;/li&gt; pour délimiter 
+les éléments. Vous allez comprendre de suite avec cet exemple :
+					</p><br>
+					<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				&lt;ol&gt;<br>
+							<div class="li">&lt;li&gt;Fraises&lt;/li&gt;<br>
+							&lt;li&gt;Framboises&lt;/li&gt;<br>
+							&lt;li&gt;Cerises&lt;/li&gt;</div>
+						&lt;/ol&gt;<br>
+					</div><br>
+		</div>
+		<hr>
+
+		<!-- Debut image -->
+		<div id="image" class="texte">
+			<h2>Les Images</h2>
+			<p>Pour inserer une image on utilise la balise <strong>&lt;img /&gt;</strong></p><br>
+			<p>La balise doit être accompagnée de deuxattributs obligatoires :</p><br>
+			<ul>
+				<li>
+					<em>src</em> : il permet d'indiquer où se trouve l'image que l'on veut insérer. Vous pouvez soit mettre un chemin absolu (ex. : <em>http://www.site.com/fleur.png</em>), soit mettre le chemin en relatif (ce qu'on fait le plus souvent).Ainsi, si votre image est dans un sous-dossier <em>images</em>, vous devrez taper : <em>src="images/fleur.png"</em>
+				</li>
+				<li>
+					<em>alt</em> : cela signifie « texte alternatif ». On doit toujours
+ indiquer un texte alternatif à l'image, c'est-à-dire un court texte qui
+ décrit ce que contient l'image. Ce texte sera affiché à la place de 
+l'image si celle-ci ne peut pas être téléchargée (cela arrive), ou dans 
+les navigateurs de personnes handicapées (non-voyants) qui ne peuvent 
+malheureusement pas « voir » l'image. Cela aide aussi les robots des 
+moteurs de recherche pour les recherches d'images. Pour la fleur, on 
+mettrait par exemple : <em>alt="Une fleur"</em>.
+				</li>
+			</ul><br>
+			<p>Voici un exemple d'insertion d'image :</p><br>
+				<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				&lt;p&gt; <br> 
+							<div class="li">
+								Voici une photo que j'ai prise lors de mes dernières vacances à la montagne :&lt;br&gt;<br>
+								&lt;img src="images/montagne.jpg" alt="Photo de montagne" /&gt;
+							</div>
+						&lt;/p&gt;
+	    			</div><br>
+	    	<h3>Les differents formats d'image</h3><br>
+	    	<h4>Le JPEG</h4><br>
+	    	<p>
+	    		Les images au format JPEG(<em>Joint Photographic Expert Group</em>)
+ sont très répandues sur le Web. Ce format est conçu pour réduire le 
+poids des photos (c'est-à-dire la taille du fichier associé), qui 
+peuvent comporter plus de 16 millions de couleurs différentes.
+	    	</p>
+	    	<p>
+	    		Les images JPEG sont enregistrées avec l'extension <em>.jpg</em> ou <em>.jpeg</em>.
+	    	</p><br>
+	    	<p>
+	    		Notez que le JPEG détériore un peu la qualité de l'image, d'une 
+façon généralement imperceptible. C'est ce qui le rend si efficace pour 
+réduire le poids des photos. <br>
+				Quand il s'agit d'une photo, on ne peut généralement pas détecter la
+ perte de qualité. Par contre, si ce n'est pas une photo, vous risquez 
+de voir l'image un peu « baver ». Dans ce cas, il vaut mieux utiliser le
+ format PNG.
+	    	</p><br>
+	    	<h4>Le PNG</h4><br>
+	    	<p>
+	    		Le format PNG(<em>Portable Network Graphics</em>) est le plus 
+récent de tous. Ce format est adapté à la plupart des graphiques (je 
+serais tenté de dire « à tout ce qui n'est pas une photo »). Le PNG a 
+deux gros avantages : il peut être rendu transparent et il n'altère pas 
+la qualité de l'image.
+	    	</p><br>
+	    	<p>
+	    		Le PNG existe en deux versions, en fonction du nombre de couleurs que doit comporter l'image :
+	    	</p><br>
+	    	<ul>
+	    		<li>PNG8 bits : 256 couleurs ;</li>
+	    		<li>PNG24 bits : 16 millions de couleurs (autant qu'une image JPEG).</li>
+	    	</ul><br>
+	    	<h4>Le GIF</h4><br>
+	    	<p>
+	    		C'est un format assez vieux, qui a été néanmoins très utilisé (et
+ qui reste très utilisé par habitude).Aujourd'hui, le PNG est 
+globalement bien meilleur que le GIF : les images sont généralement plus
+ légères et la transparence est de meilleure qualité. Je vous recommande
+ donc d'utiliser le PNG autant que possible.
+	    	</p><br>
+	    	<p>
+	    		Le format GIF est limité à 256 couleurs (alors que le PNGpeut aller jusqu'à plusieurs millions de couleurs).
+	    	</p><br>
+	    	<p>
+	    		Néanmoins, le GIF conserve un certain avantage que le PNGn'a pas : il peut être animé.
+	    	</p><br>
+	    	<p>
+	    		Si on résume, voici quel format adopter en fonction de l'image que vous avez :
+	    	</p><br>
+	    	<ul>
+	    		<li><strong>Une photo</strong> : utilisez un JPEG.</li>
+	    		<li><strong>N'importe quel graphique avec peu de couleurs</strong> (moins de 256) : utilisez un PNG8 bits ou éventuellement un GIF.</li>
+	    		<li><strong>N'importe quel graphique avec beaucoup de couleurs</strong> : utilisez un PNG24 bits.</li>
+	    		<li><strong>Une image animée</strong> : utilisez un GIF animé.</li>
+	    	</ul>
+		</div>
+		<hr>
+
+		<!-- Debut formulaire -->
+		<div id="formulaire" class="texte">
+			<h2>Les formulaires</h2><br>
+			<h3>Créer un formulaire</h3>
+			<p>
+				Vous devez pour commencer écrire une balise <strong>&lt;form&gt; &lt;/form&gt;</strong>. C'est la balise principale du formulaire, elle permet d'en indiquer le début et la fin.
+			</p><br>
+				<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				&lt;p&gt;Texte avant le formulaire&lt;p&gt;<br> 
+	    				&lt;form&gt;
+							<div class="li">
+								&lt;p&gt;Texte à l'interieur du formulaire&lt;p&gt;	
+							</div>
+						&lt;/form&gt;<br>
+						&lt;p&gt;Texte après le formulaire&lt;p&gt;
+	    			</div><br>
+	    	<p>Vous devez ajouter deux attributs à la balise <strong>&lt;form&gt;</strong> :</p><br>
+	    	<ul>
+	    		<li>
+	    			<em>method</em> : cet attribut indique par quel moyen les 
+données vont être envoyées. Il existe deux solutions pour envoyer des 
+données sur le Web :
+	    			<ul>
+	    				<li>
+	    					<em>method="get"</em> : c'est une méthode en général assez peu
+ adaptée car elle est limitée à 255 caractères. La particularité vient 
+du fait que les informations seront envoyées dans l'adresse de la page (<em>http://…</em>),
+ mais ce détail ne nous intéresse pas vraiment pour le moment. La 
+plupart du temps, je vous recommande d'utiliser l'autre méthode : <em>post</em>.
+	    				</li>
+	    				<li>
+	    					<em>method="post"</em> : c'est la méthode la plus utilisée 
+pour les formulaires car elle permet d'envoyer un grand nombre 
+d'informations. Les données saisies dans le formulaire ne transitent pas
+ par la barre d'adresse.
+	    				</li>
+	    			</ul>
+	    		</li>
+	    		<li>
+	    			<em>action</em> : c'est l'adresse de la page ou du programme qui
+ va traiter les informations. Cette page se chargera de vous envoyer un 
+e-mail avec le message si c'est ce que vous voulez, ou bien 
+d'enregistrer le message avec tous les autres dans une base de données. <br>
+					Cela ne peut pas se faire en HTML et CSS, on utilisera en général 
+un autre langage dont vous avez peut-être entendu parler : PHP.
+	    		</li>
+	    	</ul>
+	    	<p>Pour <em>method</em>, je vais mettre la valeur <em>post</em>.</p><br>
+	    	<p>
+	    		Pour action, je vais taper le nom d'une page fictive en PHP 
+(traitement.php). C'est cette page qui sera appelée lorsque le visiteur 
+cliquera sur le bouton d'envoi du formulaire
+	    	</p>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				&lt;form method="post" action="traitement.php"&gt;
+							<div class="li">
+								&lt;p&gt;Texte à l'interieur du formulaire&lt;p&gt;	
+							</div>
+						&lt;/form&gt;<br>
+	    			</div><br>
+	    	<p>
+	    		Notre priorité, pour le moment, est de découvrir en HTML/CSS 
+comment faire pour insérer des zones de texte, des boutons et des cases à
+ cocher dans votre page web. C'est ce que nous allons voir maintenant.
+	    	</p>
+	    	<h4>Les zones de saisie basiques</h4>
+	    	<p>
+	    		Nous allons passer en revue les différentes balises HTML permettant de saisir du texte dans un formulaire.<br>Il faut savoir qu'il y a deuxzones de texte différentes :
+	    	</p><br>
+	    	<ul>
+	    		<li>
+	    			<strong>La zone de texte monoligne</strong> : comme son noml'indique, on ne peut y écrire qu'une seule ligne. Elle sert à saisir des textes courts, par exemple un pseudo.
+	    		</li>
+	    		<li>
+	    			<strong>La zone de texte multiligne</strong> : cette zone de 
+texte permet d'écrire une quantité importante de texte sur plusieurs 
+lignes, par exemple une dissertation sur l'utilité du HTML dans le 
+développement des pays d'Asie du Sud-Est (ce n'est qu'une suggestion 
+hein…).
+	    		</li>
+	    	</ul><br>
+	    	<p>Pour créer une zone de texte à une ligne, on doit écrire :</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="text"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    	<p>
+	    		Ce n'est pas encore suffisant : il faut donner un nomà votre zone
+ de texte. Ce nom n'apparaît pas sur la page mais il vous sera 
+indispensable par la suite. En effet, cela vous permettra (en PHP par 
+exemple) de reconnaître d'où viennent les informations : vous saurez que
+ tel texte est le pseudo du visiteur, tel texte est le mot de passe 
+qu'il a choisi, etc
+	    	</p><br>
+	    	<p>
+	    		Pour donner un nomà un élément de formulaire, on utilise 
+l'attribut name. Ici, on va supposer qu'on demande au visiteur de 
+rentrer son pseudo :
+	    	</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="text" name="pseudo"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    	<h4>Les libellés</h4><br>
+	    	<p>
+	    		Cette zone de texte est bien jolie mais si votre visiteur tombe 
+dessus, il ne sait pas ce qu'il doit écrire. C'est justement le rôle de 
+la balise &lt;label&gt; :
+	    	</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				&lt;form <em>method="post" action="traitement.php"</em>&gt;
+							<div class="li">
+								&lt;p&gt;<br>
+									<div class="label">
+										&lt;label&gt;Votre pseudo&lt;/label&gt; : <strong>&lt;input</strong> <em>type ="text" name="pseudo"</em> <strong> /&gt;</strong>
+									</div>
+								&lt;p&gt;	
+							</div>
+						&lt;/form&gt;<br>
+	    			</div><br>
+	    	<p>
+	    		Pour lier le label au champ, il faut lui donner un attribut for 
+qui a la même valeur que l'id du champ…Le mieuxest de le voir sur un 
+exemple :
+	    	</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				&lt;form <em>method="post" action="traitement.php"</em>&gt;
+							<div class="li">
+								&lt;p&gt;<br>
+									<div class="label">
+										&lt;label <em>for="pseudo"</em>&gt;Votre pseudo&lt;/label&gt; : <strong>&lt;input</strong> <em>type ="text" name="pseudo" id="pseudo"</em> <strong> /&gt;</strong>
+									</div>
+								&lt;p&gt;	
+							</div>
+						&lt;/form&gt;<br>
+	    			</div><br>
+	    	<h4>Quelques attributs supplementaires</h4><br>
+	    	<p>On peut ajouter un certain nombre d'autres attributs à la balise &lt;input /&gt; pour personnaliser son fonctionnement :</p>
+	    	<ul>
+	    		<li>
+	    			On peut agrandir le champ avec <em>size</em>
+	    		</li>
+	    		<li>
+	    			On peut limiter le nombre de caractères que l'on peut saisir avec <em>maxlength</em>
+	    		</li>
+	    		<li>
+	    			On peut pré-remplir le champ avec une valeur par défaut à l'aide de <em>value</em>.
+	    		</li>
+	    		<li>
+	    			On peut donner une indication sur le contenu du champ avec <em>placeholder</em>. Cette indication disparaîtra dès que le visiteur aura cliqué à l'intérieur du champ.
+	    		</li>
+	    	</ul><br>
+	    	<h4>Zone de mot de passe</h4><br>
+	    	<p>Pour créer ce type de zone de saisie, utilisez l'attribut <em>type="password"</em>.</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="password" name="pass"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    	<h4>Zone de texte multiligne</h4><br>
+	    	<p>
+	    		Pour créer une zone de texte multiligne, on change de balise : nous allons utiliser <strong>&lt;textarea&gt; &lt;/textarea&gt;</strong>.
+	    	</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				&lt;form <em>method="post" action="traitement.php"</em>&gt;
+							<div class="li">
+								&lt;p&gt;<br>
+									<div class="label">
+										&lt;label <em>for="ameliorer"</em>&gt;Comment pensez-vous que je pourrais améliorer mon site ?&lt;/label&gt;<br> <strong>&lt;textarea</strong> <em>name="ameliorer" id="ameliorer"</em> <strong>&gt;&lt;/textarea&gt;</strong>
+									</div>
+								&lt;p&gt;	
+							</div>
+						&lt;/form&gt;<br>
+	    			</div><br>
+	    	<h3>Les zones de saisies enrichies</h3><br>
+	    	<h4>E-mail</h4><br>
+	    	<p>Vous pouvez demander à saisir une adresse e-mail :</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="email"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    	<h4>Une URL</h4><br>
+	    	<p>Avec le type <em>url</em>, on peut demander à saisir une adresse absolue (commençant généralement par <em>http://</em>) :</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="email"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    	<h4>Numéro de téléphone</h4><br>
+	    	<p>On peut considerer le numero comme un chaîne de caractère</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="text"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    	<h4>Nombre</h4><br>
+	    	<p>Ce champ permet de saisir un nombre entier :</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="number"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    	<p>Le champ s'affichera en général avec des petites flèches pour changer la valeur (figure suivante)</p><br>
+	    		<form class="form">
+	    			<input type="number" value="5" class="number">
+	    			<label> Champ de saisie de nombre</label>
+	    		</form><br>
+	    		<p>Vous pouvez personnaliser le fonctionnement du champ avec les attributs suivants :</p><br>
+	    		<ul>
+	    			<li><em>min</em> : valeur minimale autorisée.</li>
+	    			<li><em>max</em> : valeur maximale autorisée</li>
+	    			<li>
+	    				<em>step</em> : c'est le « pas » de déplacement. Si vous 
+indiquez un pas de 2, le champ n'acceptera que des valeurs de 2 en 2 
+(par exemple 0, 2, 4, 6…).
+	    			</li>
+	    		</ul><br>
+	    		<h4>Un curseur</h4><br>
+	    		<p>Le type range permet de sélectionner un nombre avec un curseur (aussi appelé slider)</p><br>
+	    			<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="range"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    		<h4>Date</h4><br>
+	    		<p>Différents types de champs de sélection de date existent :</p><br>
+	    		<ul>
+	    			<li><em>date</em> : pour la date (05/08/1985 par exemple) ;</li>
+	    			<li><em>time</em> : pour l'heure (13:37 par exemple) ;</li>
+	    			<li><em>week</em> : pour la semaine ;</li>
+	    			<li><em>month</em> : pour le mois ;</li>
+	    			<li><em>
+	    				datetime</em> : pour la date et l'heure (avec gestion du décalage horaire) ;
+	    			</li>
+	    			<li>
+	    				<em>datetime-local</em> pour la date et l'heure (sans gestion du décalage horaire).
+	    			</li>
+	    		</ul><br>
+	    		<p>Exemple :</p>
+	    			<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="date"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    		<h4>Recherche</h4><br>
+	    		<p>On peut créer un champ de recherche comme ceci :</p><br>
+	    			<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="date"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    		<h3>Les éléments d'options</h3><br>
+	    		<p>Ce sont des éléments qui demandent au visiteur de faire un choixparmi une liste de possibilités. Nous allons passer en revue :</p><br>
+	    		<ul>
+	    			<li>les cases à cocher ;</li>
+	    			<li>les zones d'options ;</li>
+	    			<li>les listes déroulantes.</li>
+	    		</ul><br>
+	    		<h4>Les cases à cocher</h4><br>
+	    		<p>
+	    			Nous allons réutiliser la balise <strong>&lt;input /&gt;</strong>, en spécifiant cette fois le type <em>checkbox</em> :
+	    		</p><br>
+	    			<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				<strong>&lt;input</strong> <em>type ="checkbox"</em> <strong> /&gt;</strong><br>
+	    			</div><br>
+	    		<p>Rajoutez un &lt;label&gt; bien placé, et le tour est joué !</p><br>
+	    		<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				&lt;form <em>method="post" action="traitement.php"</em>&gt;
+							<div class="li">
+								&lt;p&gt;<br>
+									<div class="label">
+										Cochez les aliments que vous aimez manger :&lt;br /&gt;<br>
+										&lt;input <em>type="checkbox" name="frites" id="frites"</em> /&gt; &lt;label for="frites"&gt;Frites&lt;/label&gt;&lt;br /&gt;<br>
+
+										&lt;input <em>type="checkbox" name="steak" id="steak"</em> /&gt; &lt;label for="steak"&gt;Steak&lt;/label&gt;&lt;br /&gt;<br>
+
+										&lt;input <em>type="checkbox" name="epinards" id="epinards"</em> /&gt; &lt;label for="epinards"&gt;Epinards&lt;/label&gt;&lt;br /&gt;<br>
+									</div>
+								&lt;p&gt;	
+							</div>
+						&lt;/form&gt;<br>
+	    			</div><br>
+	    		<p>Et voici le résultat en figure suivante.</p><br>
+	    		<form method="post" action="traitement.php" class="checkbox">
+	    		<p>
+		    		Cochez les aliments que vous aimez manger :<br>
+		    		<input type="checkbox" name="frites" id="frites" checked="checked"> <label for="frites">Frites</label><br>
+		    		<input type="checkbox" name="steak" id="steak"> <label for="steak">Steak haché</label><br>
+		    		<input type="checkbox" name="epinards" id="epinards">
+		    		<label for="epinards">Epinards</label><br>
+		    		<input type="checkbox" name="huitres" id="huitres"> <label for="huitres">Huitres</label>
+	    		</p>
+	    		</form><br>
+	    		<h4>Les zones d'options</h4><br>
+	    		<p>
+	    			Les zones d'options vous permettent de faire un choix(et un 
+seul) parmi une liste de possibilités. Elles ressemblent un peu aux 
+cases à cocher mais il y a une petite difficulté supplémentaire : elles 
+doivent être organisées en groupes. Les options d'un même groupe 
+possèdent le même nom(name), mais chaque option doit avoir une valeur 
+(value) différente.
+	    		</p><br>
+	    		<p>
+	    			La balise à utiliser est toujours un &lt;input /&gt;, avec cette fois la valeur <em>radio</em> pour l'attribut <em>type</em>.
+	    		</p><br>
+	    			<strong>Code HTML :</strong>
+	    			<div class="codes">
+	    				&lt;form <em>method="post" action="traitement.php"</em>&gt;
+							<div class="li">
+								&lt;p&gt;<br>
+									<div class="label">
+										Cochez les aliments que vous aimez manger :&lt;br /&gt;<br>
+
+										&lt;input <em>type="radio" name="age" value="moins15" id="moins15"</em> /&gt; &lt;label for="moins15"&gt;Moins de 15 ans&lt;/label&gt;&lt;br /&gt;<br>
+
+										&lt;input <em>type="radio" name="age" value="medium15-40" id="medium15-40" </em> /&gt; &lt;label for="medium15-40"&gt;15-40 ans&lt;/label&gt;&lt;br /&gt;<br>
+
+										&lt;input <em>type="radio" name="age" " value="plus40" id="plus40" </em> /&gt; &lt;label for="plus40"&gt;Encore plus vieux que ça ?!&lt;/label&gt;&lt;br /&gt;<br>
+									</div>
+								&lt;p&gt;	
+							</div>
+						&lt;/form&gt;<br>
+	    			</div><br>
+	    			<p>Ce qui nous donne la figure suivante.</p><br>
+	    			<form method="post" action="traitement.php" class="checkbox">
+	    			<p>
+		    			Veuillez indiquer la tranche d'âge dans laquelle vous vous
+		    			situez :<br>
+		    			<input type="radio" name="age" value="moins15" id="moins15"> <label for="moins15">Moins de 15 ans</label><br>
+		    			<input type="radio" name="age" value="medium15-25" id="medium15-25"> <label for="medium15-25">15-25 ans</label><br>
+		    			<input type="radio" name="age" value="plus40" id="plus40">
+		    			<label for="plus40">Encore plus vieux que ça ?!</label>
+	    			</p>
+	    			</form><br>
+
+	    			<h4>Les listes déroulantes</h4><br>
+	    			<p>
+	    				Les listes déroulantes sont un autre moyen élégant de faire un 
+choixparmi plusieurs possibilités. Le fonctionnement est un peu 
+différent. On va utiliser la balise &lt;select&gt; &lt;/select&gt; qui 
+indique le début et la fin de la liste déroulante. On ajoute l'attribut 
+name à la balise pour donner un nomà la liste.
+	    			</p><br>
+	    			<p>
+	    				Puis, à l'intérieur du &lt;select&gt; &lt;/select&gt;, nous 
+allons placer plusieurs balises &lt;option&gt; &lt;/option&gt; (une par 
+choix possible). On ajoute à chacune d'elles un attribut value pour 
+pouvoir identifier ce que le visiteur a choisi.
+	    			</p><br>
+	    			<p>Voici un exemple d'utilisation :</p><br>
+	    				    		<strong>Code HTML :</strong>
+	    				    			<div class="codes">
+	    				    			&lt;form <em>method="post" action="traitement.php"</em>&gt;
+	    									<div class="li">
+	    										&lt;p&gt;<br>
+	    										<div class="label">
+	    											&lt;label for="pays"&gt;Dans quel pays habitez-vous ?&lt;/label&gt;&lt;br /&gt;<br>
+	    												&lt;select name="pays" id="pays"&gt;<br>
+	    													&lt;option value="france"&gt;France&lt;/option&gt;<br>
+	    													&lt;option value="espagne"&gt;Espagne&lt;/option&gt;<br>
+	    													&lt;option value="italie"&gt;Italie&lt;/option&gt;<br>
+	    													&lt;option value="royaume-uni"&gt;Royaume-Uni&lt;/option&gt;<br>
+	    													&lt;option value="canada"&gt;Canada&lt;/option&gt;<br>
+	    													&lt;option value="etats-unis"&gt;États-Unis&lt;/option&gt;<br>
+	    													&lt;option value="chine"&gt;Chine&lt;/option&gt;<br>
+	    													&lt;option value="japon"&gt;Japon&lt;/option&gt;<br>
+	    												&lt;/select&gt;
+
+	    											</div>
+	    											&lt;p&gt;	
+	    										</div>
+	    									&lt;/form&gt;<br>
+	    				    			</div><br>
+
+		</div>
+
+	</div>
+
+
+</div></body></html>
